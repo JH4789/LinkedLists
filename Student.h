@@ -7,6 +7,8 @@ using namespace std;
 class Student{
 public:
   int year;
+  void setYear(int newyear);
+  int getYear();
 };
 
 #endif
