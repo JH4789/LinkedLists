@@ -6,9 +6,16 @@ using namespace std;
 
 class Student{
 public:
-  int year;
-  void setYear(int newyear);
-  int getYear();
+  void setID(int newid);
+  void getYear();
+  void setFirst(char* newfirstname);
+  void setLast(char* newlastname);
+  void setGPA(float newgpa);
+private:
+  int id;
+  char* firstname;
+  char* lastname;
+  float gpa;
 };
 
 #endif

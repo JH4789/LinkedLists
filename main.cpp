@@ -2,46 +2,25 @@
 #include <cstring>
 #include "Node.h"
 using namespace std;
-/*
-void addStudent(Student* newstudent);
-*/
-void printStudent(Node* next);
-
 Node* head = NULL;
 int main() {
   Student* test;
   Student* test1;
-  test -> setYear(4);
-  test1 -> setYear(5);
+  char first[100] = "Nihal";
+  char last[100] = "P";
+  test -> setID(12345);
+  test -> setGPA(3.5);
+  test->setFirst(first);
+  test->setLast(last);
+  test1 -> setGPA(3.2);
+  test1 -> setID(234);
+  test1->setFirst(first);
+  test1->setLast(last);
   head = new Node(test);
   head->setNext(new Node(test1));
-  printStudent(head);  
+  head->getStudent()->getYear();
+  head->getNext()->getStudent()->getYear();
   return 0;
 }
-/*
-void addStudent(Student* newstudent) {
-  Node* current = head;
-  newstudent->setYear(4);
-  if(current == NULL) {
-    head = new Node(newstudent);
-  }
-  
-  else {
-    while(current->getNext() != NULL) {
-      current = current->getNext();
-    }
-  }
-  current->setNext(new Node(newstudent));
-  
-}
-*/
-void printStudent(Node* next) {
-  if(next == head) {
-    cout << "Start: ";
-  }
-  if (next != NULL) {
-    cout << next->getStudent()->getYear() << endl;
-    printStudent(next->getNext());
-  }
-}
+
 
