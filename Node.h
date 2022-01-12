@@ -1,4 +1,8 @@
-//Boring setup here
+/*
+Name: Jayden Huang
+Date: 1/12/2022
+Purpose: Linked List framework to practice nodes. Prints out elements of a linked list to verify accuracy.
+*/
 #ifndef NODEHEADER
 #define NODEHEADER
 #include <iostream>
