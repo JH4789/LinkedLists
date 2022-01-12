@@ -4,6 +4,7 @@
 using namespace std;
 Node* head = NULL;
 int main() {
+  //Creates two students that are added to a linked list, prints out info using nodes
   Student* test;
   Student* test1;
   char first[100] = "Nihal";

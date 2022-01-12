@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-
+//Used for testing purposes
 class Student{
 public:
   void setID(int newid);

@@ -1,3 +1,4 @@
+//Boring setup here
 #ifndef NODEHEADER
 #define NODEHEADER
 #include <iostream>
@@ -11,6 +12,7 @@ class Node{
   void setNext(Node* next);
   Node* getNext();
  private:
+  //Needs to hold a Student pointer for code to work
   Student* student;
   Node* next; 
 };

@@ -1,6 +1,6 @@
 #include "Student.h"
 #include <cstring>
-
+//Used for testing, largely based off of Student List
 void Student::setID(int newid) {
   id = newid;
 }

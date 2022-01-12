@@ -1,4 +1,5 @@
 #include "Node.h"
+//Functions to iterate through a linked list
 Node::Node(Student* newstudent) {
   student = newstudent;
   next = NULL;
